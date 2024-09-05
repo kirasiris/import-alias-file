@@ -27,6 +27,10 @@ The `import-alias-file` community can be found on [GitHub Discussions](https://g
 
 - Kevin Fonseca ([@kirasiris](https://github.com/kirasiris))
 
+## Contributing
+
+This library is still too young. I accept any help you guys can provide. The goal is to make the functionality NextJS uses into NodeJS. Please feel free to share your knowledge!
+
 ## Contributors
 
 A list of co-authors that have helped improve this amazing library!

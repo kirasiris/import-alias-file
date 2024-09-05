@@ -1,3 +1,3 @@
 const lookFile = require("import-alias-file");
-
-console.log(lookFile("@/index.js"));
+const test = lookFile("@/example");
+console.log("Test", test);
