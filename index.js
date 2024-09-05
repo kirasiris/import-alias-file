@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 
 const alias = {
-	"@": path.resolve(__dirname, "index.js"), // Adjust 'src' to your base directory
+	"@": path.resolve(__dirname, "../../node_modules/import-alias-file"), // Adjust 'src' to your base directory
 };
 
 const lookFile = (modulePath) => {
