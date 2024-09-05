@@ -6,7 +6,18 @@ npm i import-alias-file
 
 ## Description
 
+This npm library eases the process of importing files within a nodejs project.
+The way it works it's similar to NextJS!.
+
+I made it after getting tired of using `../` multiple times when I needed to use a function that was placed in a different file!
+
 ## Usage
+
+```js
+const lookFile = require("import-alias-file");
+
+const Url = lookFile("@/folder/folder/file");
+```
 
 ## Community
 
