@@ -1,5 +1,31 @@
-
 {
-    "name": "import-alias-file",
-    "license": "MIT"
+  "name": "import-alias-file",
+  "version": "1.0.0",
+  "description": "Import files via @ alias without having to manually enter ../ several times",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirasiris/import-alias-file.git"
+  },
+  "keywords": [
+    "nextjs",
+    "alias",
+    "files",
+    "import",
+    "files-import"
+  ],
+  "author": "Kevin Uriel Fonseca",
+  "license": "MIT",
+  "bugs": {
+    "email": "kebin1421@hotmail.com",
+    "url": "https://github.com/kirasiris/import-alias-file/issues"
+  },
+  "homepage": "https://github.com/kirasiris/import-alias-file#readme",
+  "dependencies": {
+    "node": "^22.8.0"
+  }
 }
