@@ -56,9 +56,22 @@ The `import-alias-file` community can be found on [GitHub Discussions](https://g
 
 - Kevin Fonseca ([@kirasiris](https://github.com/kirasiris))
 
+## Support Me.
+
+Dude, I'm broke. If you find this useful, please don't hesitate to help me maintain it!.
+
+- [PayPal](https://www.paypal.com/paypalme/kirasiris)
+- [CashApp](https://cash.app/$kirasiris)
+
 ## Contributing
 
 This library is still too young. I accept any help you guys can provide. The goal is to make the functionality NextJS uses into NodeJS. Please feel free to share your knowledge!
+
+## Hire Me
+
+I'm available to work with you guys. If you need a developer who specializes in MongoDB, Express, ReactJS/NextJS, NodeJS, Php and MySQL, then I'm you're guy!. Reach out to me at `kuaf1998@gmail.com`.
+
+You can also check my portfolio at [my personal blog](https://kevinfonseca.vercel.app/theme).
 
 ## Contributors
 
