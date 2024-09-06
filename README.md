@@ -70,6 +70,7 @@ Dude, I'm broke. If you find this useful, please don't hesitate to help me maint
 
 - [PayPal](https://www.paypal.com/paypalme/kirasiris)
 - [CashApp](https://cash.app/$kirasiris)
+- [Venmo](https://venmo.com/kirasiris)
 
 ## Contributing
 
