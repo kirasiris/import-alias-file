@@ -1,4 +1,12 @@
-# First Step
+# Pre-requisites
+
+You will need NodeJS installed in your machine/project in order to the load both the `path` and `fs` libraries.
+
+```
+npm i node
+```
+
+## Install
 
 ```
 npm i import-alias-file
