@@ -14,10 +14,39 @@ I made it after getting tired of using `../` multiple times when I needed to use
 ## Usage
 
 ```js
+const express = require("express");
+
 const lookFile = require("import-alias-file");
 
-const Url = lookFile("@/folder/folder/file");
+const { getBlogs, getBlog, createBlog } = lookFile("@/controllers/blogs"); // <- That
+// Instead of this, '../../../../controllers/blogs';
+
+const Blog = lookFile("@/models/Blog"); // <- That
+// Instead of this, '../../../models/Blog;
+
+const router = express.Router();
+
+router.route("/").get(getBlogs).post(createBlog);
+
+router.route("/:id").get(getBlog);
+
+module.exports = router;
 ```
+
+## Extensions
+
+You can specify the file extension as well.
+
+```js
+// This is the same
+const { getBlogs, getBlog, createBlog } = lookFile("@/controllers/blogs");
+const Blog = lookFile("@/models/Blog");
+// as this
+const { getBlogs, getBlog, createBlog } = lookFile("@/controllers/blogs.js");
+const Blog = lookFile("@/models/Blog.js");
+```
+
+The extensions supported so far are `.js`, `.json`, and `.ts`.
 
 ## Community
 

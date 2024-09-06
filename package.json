@@ -1,32 +1,35 @@
 {
-  "name": "import-alias-file",
-  "version": "1.0.3",
-  "description": "Import files via @ alias without having to manually enter ../ several times",
-  "private": false,
-  "main": "index.js",
-  "scripts": {
-    "test": "test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kirasiris/import-alias-file.git"
-  },
-  "keywords": [
-    "nextjs",
-    "alias",
-    "files",
-    "import",
-    "files-import"
-  ],
-  "author": "Kevin Uriel Fonseca",
-  "license": "MIT",
-  "bugs": {
-    "email": "kebin1421@hotmail.com",
-    "url": "https://github.com/kirasiris/import-alias-file/issues"
-  },
-  "homepage": "https://github.com/kirasiris/import-alias-file#readme",
-  "dependencies": {
-    "import-alias-file": "^1.0.2",
-    "node": "^22.8.0"
-  }
+	"name": "import-alias-file",
+	"version": "1.0.4",
+	"description": "Import files via @ alias without having to manually enter ../ several times",
+	"private": false,
+	"main": "index.js",
+	"scripts": {
+		"test": "test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kirasiris/import-alias-file.git"
+	},
+	"keywords": [
+		"nextjs",
+		"alias",
+		"files",
+		"filesystem",
+		"file-system",
+		"import",
+		"files-import",
+		"nodejs"
+	],
+	"author": "Kevin Uriel Fonseca",
+	"license": "MIT",
+	"bugs": {
+		"email": "kebin1421@hotmail.com",
+		"url": "https://github.com/kirasiris/import-alias-file/issues"
+	},
+	"homepage": "https://github.com/kirasiris/import-alias-file#readme",
+	"dependencies": {
+		"import-alias-file": "^1.0.2",
+		"node": "^22.8.0"
+	}
 }
