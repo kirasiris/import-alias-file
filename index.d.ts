@@ -1,3 +1,3 @@
 declare module 'import-alias-file' {
-    export function lookFile(modulePath: string): any;
+    export default function lookFile(modulePath: string): any;
 }
