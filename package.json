@@ -4,6 +4,7 @@
 	"description": "Import files via @ alias without having to manually enter ../ several times",
 	"private": false,
 	"main": "index.js",
+	"types": "index.d.ts",
 	"scripts": {
 		"test": "test.js"
 	},
