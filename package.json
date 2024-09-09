@@ -1,6 +1,6 @@
 {
 	"name": "import-alias-file",
-	"version": "1.0.11",
+	"version": "2.0.0",
 	"description": "Import files via @ alias without having to manually enter ../ several times",
 	"private": false,
 	"main": "index.js",
@@ -30,7 +30,7 @@
 	},
 	"homepage": "https://github.com/kirasiris/import-alias-file#readme",
 	"dependencies": {
-		"import-alias-file": "^1.0.10",
+		"import-alias-file": "^1.0.11",
 		"node": "^22.8.0"
 	}
 }

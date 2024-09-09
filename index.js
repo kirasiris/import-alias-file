@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require("fs");
+const { exec } = require("child_process");
 
 const alias = {
 	"@": path.resolve(__dirname, process.cwd()), // Adjust 'src' to your base directory
@@ -11,7 +12,7 @@ const lookFile = (modulePath) => {
 	// Check if the file exists without an extension
 	if (fs.existsSync(resolvedPath)) {
 		// return require(resolvedPath);
-		return { path: filePathWithExt, module: require(filePathWithExt) }; // Return both path and module
+		return { path: resolvedPath, module: require(resolvedPath) }; // Return both path and module
 	}
 
 	// If not found, check for common extensions
@@ -28,4 +29,13 @@ const lookFile = (modulePath) => {
 	throw new Error(`Module not found: ${resolvedPath}`);
 };
 
-module.exports = lookFile;
+// Utility function to open the file in the default editor
+const openFile = (filePath) => {
+	exec(`start ${filePath}`, (err) => {
+		if (err) {
+			console.error(`Could not open file: ${err}`);
+		}
+	});
+};
+
+module.exports = { lookFile, openFile };
