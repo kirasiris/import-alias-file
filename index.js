@@ -10,7 +10,8 @@ const lookFile = (modulePath) => {
 
 	// Check if the file exists without an extension
 	if (fs.existsSync(resolvedPath)) {
-		return require(resolvedPath);
+		// return require(resolvedPath);
+		return { path: filePathWithExt, module: require(filePathWithExt) }; // Return both path and module
 	}
 
 	// If not found, check for common extensions
@@ -19,7 +20,8 @@ const lookFile = (modulePath) => {
 	for (const ext of extensions) {
 		const filePathWithExt = resolvedPath + ext;
 		if (fs.existsSync(filePathWithExt)) {
-			return require(filePathWithExt);
+			// return require(filePathWithExt);
+			return { path: filePathWithExt, module: require(filePathWithExt) }; // Return both path and module
 		}
 	}
 
