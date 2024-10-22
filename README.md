@@ -1,6 +1,6 @@
 # Pre-requisites
 
-You will need NodeJS installed in your machine/project in order to the load both the `path` and `fs` libraries.
+You will need NodeJS installed in your machine/project in order to load both the `path` and `fs` libraries.
 
 ```
 npm i node
@@ -27,10 +27,10 @@ const express = require("express");
 const lookFile = require("import-alias-file");
 
 const { getBlogs, getBlog, createBlog } = lookFile("@/controllers/blogs"); // <- That
-// Instead of this, '../../../../controllers/blogs';
+// Instead of this, require('../../../../controllers/blogs');
 
 const Blog = lookFile("@/models/Blog"); // <- That
-// Instead of this, '../../../models/Blog;
+// Instead of this, require('../../../models/Blog);
 
 const router = express.Router();
 
