@@ -38,4 +38,9 @@ const logFilePath = (filePath) => {
 	console.log(`File opened: ${filePath}`);
 };
 
+// CommonJS export
+if (typeof module !== "undefined" && module.exports) {
+	module.exports = { lookFile };
+}
+
 export { lookFile };

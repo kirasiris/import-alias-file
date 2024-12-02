@@ -1,4 +1,16 @@
-# Pre-requisites
+# v2.0.0 Breaking Changes
+
+Import Alias File has received some upgrades and some of the old code has become obsolete and no longer useful
+
+```js
+// Change all instances of this line
+const lookFile = require("import-alias-file");
+// to the new lookFile method
+const { lookFile } = require("import-alias-file");
+```
+
+
+## Pre-requisites
 
 You will need NodeJS installed in your machine/project in order to load both the `path` and `fs` libraries.
 
@@ -24,7 +36,8 @@ I made it after getting tired of using `../` multiple times when I needed to use
 ```js
 const express = require("express");
 
-const lookFile = require("import-alias-file");
+// const lookFile = require("import-alias-file");
+const { lookFile } = require("import-alias-file");
 
 const { getBlogs, getBlog, createBlog } = lookFile("@/controllers/blogs"); // <- That
 // Instead of this, require('../../../../controllers/blogs');

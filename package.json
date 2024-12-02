@@ -1,11 +1,11 @@
 {
 	"name": "import-alias-file",
-	"version": "1.0.17",
+	"version": "2.0.0",
 	"description": "Import files via @ alias without having to manually enter ../ several times",
 	"private": false,
 	"main": "build/index.js",
 	"module": "build/index.js",
-	"type": "module",
+	"type": "commonjs",
 	"types": "build/index.d.ts",
 	"exports": {
 		"require": "./build/cjs/index.js",
