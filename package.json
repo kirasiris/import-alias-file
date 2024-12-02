@@ -1,6 +1,6 @@
 {
 	"name": "import-alias-file",
-	"version": "1.0.15",
+	"version": "1.0.16",
 	"description": "Import files via @ alias without having to manually enter ../ several times",
 	"private": false,
 	"main": "build/index.js",
