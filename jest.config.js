@@ -15,8 +15,8 @@ export default {
 	moduleNameMapper: {
 		"^@/(.*)$": "<rootDir>/src/$1", // Path aliasing for imports
 	},
-	// clearMocks: true,
-	// collectCoverageFrom: ["src/**/*.{ts,tsx,js,jsx}", "!**/node_modules/**"],
-	// coverageDirectory: "<rootDir>/coverage",
-	// verbose: true,
+	clearMocks: true,
+	collectCoverageFrom: ["src/**/*.{ts,tsx,js,jsx}", "!**/node_modules/**"],
+	coverageDirectory: "<rootDir>/coverage",
+	verbose: true,
 };
