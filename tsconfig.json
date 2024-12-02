@@ -1,0 +1,36 @@
+{
+    "exclude": [
+        "node_modules",
+        "build",
+    ],
+    "include": [
+        "src/**/*",
+        "__tests__/**/*",
+        "index.ts"
+    ],
+    "compilerOptions": {
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "module": "ESNext",
+        "target": "ESNext",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "outDir": "build",
+        "declaration": true,
+        "declarationDir": "build",
+        "jsx": "react",
+        "skipLibCheck": true,
+        "strict": true,
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "resolveJsonModule": true, // Support JSON imports
+        "baseUrl": ".", // Enables path aliasing
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        }
+    }
+}

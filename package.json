@@ -1,12 +1,23 @@
 {
 	"name": "import-alias-file",
-	"version": "1.0.13",
+	"version": "1.0.15",
 	"description": "Import files via @ alias without having to manually enter ../ several times",
 	"private": false,
-	"main": "index.js",
-	"types": "index.d.ts",
+	"main": "build/index.js",
+	"module": "build/index.js",
+	"type": "module",
+	"types": "build/index.d.ts",
+	"exports": {
+		"require": "./build/cjs/index.js",
+		"import": "./build/esm/index.js"
+	},
+	"files": [
+		"build",
+		"README.md"
+	],
 	"scripts": {
-		"test": "test.js"
+		"test": "jest",
+		"build": "rimraf build && npx tsc -p tsconfig.esm.json && npx tsc -p tsconfig.cjs.json"
 	},
 	"repository": {
 		"type": "git",
@@ -23,14 +34,23 @@
 		"nodejs"
 	],
 	"author": "Kevin Uriel Fonseca",
-	"license": "MIT",
+	"license": "GPL-2.0-only",
 	"bugs": {
 		"email": "kebin1421@hotmail.com",
 		"url": "https://github.com/kirasiris/import-alias-file/issues"
 	},
 	"homepage": "https://github.com/kirasiris/import-alias-file#readme",
 	"dependencies": {
-		"import-alias-file": "^1.0.11",
 		"node": "^22.8.0"
+	},
+	"devDependencies": {
+		"@babel/plugin-transform-runtime": "^7.25.9",
+		"@babel/preset-env": "^7.26.0",
+		"@babel/preset-typescript": "^7.26.0",
+		"@types/jest": "^29.5.14",
+		"babel-jest": "^29.7.0",
+		"jest": "^29.7.0",
+		"ts-jest": "^29.2.5",
+		"typescript": "^5.7.2"
 	}
 }
