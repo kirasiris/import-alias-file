@@ -41,16 +41,16 @@
 	},
 	"homepage": "https://github.com/kirasiris/import-alias-file#readme",
 	"dependencies": {
-		"node": "^25.9.0"
+		"node": "^27.0.0-alpha.0.0.0"
 	},
 	"devDependencies": {
-		"@babel/plugin-transform-runtime": "^7.29.0",
-		"@babel/preset-env": "^7.29.2",
-		"@babel/preset-typescript": "^7.28.5",
+		"@babel/plugin-transform-runtime": "^8.0.6",
+		"@babel/preset-env": "^8.0.7",
+		"@babel/preset-typescript": "^8.0.7",
 		"@types/jest": "^30.0.0",
-		"babel-jest": "^30.3.0",
-		"jest": "^30.3.0",
-		"ts-jest": "^29.4.9",
-		"typescript": "^6.0.2"
+		"babel-jest": "^30.5.2",
+		"jest": "^30.5.2",
+		"ts-jest": "^29.4.15",
+		"typescript": "^6.0.3"
 	}
 }
